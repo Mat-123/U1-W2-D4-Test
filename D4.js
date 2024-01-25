@@ -31,22 +31,37 @@ console.log("Risposta 2:", crazySum(5, 5));
  Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora il numero fornito sia maggiore di 19.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function crazyDiff(num3) {
+  if (num3 > 19) {
+    result = Math.abs(num3 - 19) * 3;
+  } else {
+    result = Math.abs(num3 - 19);
+  }
+  return result;
+}
+
+console.log("Esercizio 3:", crazyDiff(-21));
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
  se n è uguale a 400.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function boundary(num4) {
+  if ((num4 <= 100 && num4 >= 20) || num4 === 400) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log("Esercizio 4:", boundary(300));
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
  La funzione deve aggiungere la parola "EPICODE" all'inizio della stringa fornita, ma se la stringa fornita comincia già con "EPICODE" allora deve
  ritornare la stringa originale senza alterarla.
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
