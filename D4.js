@@ -7,7 +7,7 @@ function area(l1, l2) {
 
   return result;
 }
-console.log("Risposta 1:", area(5, 10));
+console.log("Risposta 1:", area(5, 10), "mq");
 
 /* ESERCIZIO 2
  Scrivi una funzione di nome "crazySum", che riceve due numeri interi come parametri.
@@ -16,10 +16,11 @@ console.log("Risposta 1:", area(5, 10));
 */
 
 function crazySum(num1, num2) {
+  let add = num1 + num2;
   if (num1 === num2) {
-    result = num1 * 3;
+    result = add * 3;
   } else {
-    result = num1 + num2;
+    result = add;
   }
   return result;
 }
