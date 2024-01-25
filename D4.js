@@ -48,14 +48,15 @@ console.log("Esercizio 3:", crazyDiff(-21));
 */
 
 function boundary(num4) {
-  if ((num4 <= 100 && num4 >= 20) || num4 === 400) {
+  let num5 = parseInt(num4);
+  if ((num5 <= 100 && num5 >= 20) || num5 === 400) {
     return true;
   } else {
     return false;
   }
 }
 
-console.log("Esercizio 4:", boundary(300));
+console.log("Esercizio 4:", boundary(400.5));
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
